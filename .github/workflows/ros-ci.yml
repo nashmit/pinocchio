@@ -29,7 +29,7 @@ jobs:
       AFTER_RUN_TARGET_TEST: 'ici_with_unset_variables source /root/target_ws/install/setup.bash && cd /root/target_ws/build/pinocchio && make test'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
       # This step will fetch/store the directory used by ccache before/after the ci run
