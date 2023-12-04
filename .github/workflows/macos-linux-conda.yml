@@ -25,7 +25,7 @@ jobs:
       run: |
         git submodule update --init
 
-    - uses: conda-incubator/setup-miniconda@v2
+    - uses: conda-incubator/setup-miniconda@v3
       with:
         activate-environment: pinocchio
         auto-update-conda: true
